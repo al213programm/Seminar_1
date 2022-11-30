@@ -27,7 +27,7 @@ if (number2 < min) min = number2;
 2, 3, 7 -> 7
 44 5 78 -> 78
 22 3 9 -> 22  */
-
+/*
 Console.WriteLine("Введи певое число: ");
 int number = int.Parse(Console.ReadLine());
 
@@ -46,22 +46,45 @@ if (number3 > max) max = number3;
 {
    Console.WriteLine($"Это самое большое число {max}"); 
 }
-
+*/
 
 /* Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 4 -> да
 -3 -> нет
 7 -> нет  */
+//Console.WriteLine((int.Parse(Console.ReadLine()) & 1) == 0? "Yes": "No");
+/*
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Введи число и мы узнаем чётное оно или нечётное: ");
+        int number = int.Parse(Console.ReadLine());
+
+        if (number % 2 == 0) 
+        {
+            Console.WriteLine($"Да чётное");
+        }
+else
+        {
+            Console.WriteLine($"Нет нечётное");
+        }
+    }
+}
+*/
 
 /* Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 5 -> 2, 4
 8 -> 2, 4, 6, 8  */
 
-
-
-
-
-
+Console.Write("Введи число N: ");
+int n = int.Parse(Console.ReadLine());
+       int res = 1;
+       while (res < n)
+       {
+        Console.WriteLine(res + 1);
+        res+= 2;
+       }
 
 
 //Seminar_1
